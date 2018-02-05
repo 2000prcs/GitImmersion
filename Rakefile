@@ -1,5 +1,7 @@
-#!.usr/bin/ruby -wKU
+#!/usr/bin/ruby -wKU
+
 task :default => :run
-task :run do 
-    require './lib/hello'
+
+task :run do
+  ruby '-Ilib', 'lib/hello.rb'
 end
